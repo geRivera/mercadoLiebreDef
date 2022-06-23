@@ -9,9 +9,9 @@ app.listen(3000,()=> {
     console.log('Servidor vivo en puerto 3000'); //para levantar el servidor
 });
 
-//app.get('/',(request,response)=>{
-    //response.sendFile(path.resolve(__dirname,'./views/home.html'));//permite enviar archivo al navegador
-//});
+app.get('/',(request,response)=>{
+    response.sendFile(path.resolve(__dirname,'./views/home.html'));//permite enviar archivo al navegador
+});
 
 
 app.get('/',(request,response)=>{
