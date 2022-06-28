@@ -18,3 +18,29 @@ div.logo img{
 section.banner img{
     width: 100%;
 }
+
+.lastVisit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.product{
+    padding: 10px;
+    border-top: solid 40px #efefef;
+    background-color: #FFF;
+    width: 45%;
+}
+
+/* media queries*/
+@media screen and (min-width: 361px){
+    .product{
+        width: 45vw;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .product{
+        width: 20vw;
+    }
+}

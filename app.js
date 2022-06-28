@@ -13,3 +13,11 @@ app.listen(3000,()=> {
 app.get('/',(request,response)=>{
     response.sendFile(path.resolve(__dirname,'./views/home.html'));//permite enviar archivo al navegador
 });
+
+app.get('/register',(request,response)=>{
+    response.sendFile(path.resolve(__dirname,'./views/register.html'));//permite enviar archivo al navegador
+});
+
+app.get('/login',(request,response)=>{
+    response.sendFile(path.resolve(__dirname,'./views/login.html'));//permite enviar archivo al navegador
+});
