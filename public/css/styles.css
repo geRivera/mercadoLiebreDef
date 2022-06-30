@@ -1,15 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
 }
 
 header{
     background-color:#EAC926;
 }
 
-h2{
-    font-size: 24px;
+div.top-header{
+    padding: 5%;
 }
+
+header div.logo{
+    width: 100%;
+    padding: 10px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #1259c3;
+    color:#ebebeb;
+    margin: 10px 0px 20px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 div.logo img{
     width: 100%;
@@ -37,6 +114,9 @@ section.banner img{
     .product{
         width: 45vw;
     }
+
+
+
 }
 
 @media screen and (min-width: 769px){
