@@ -1,25 +1,18 @@
 *{
+    color: #666;
+    font-size: 12px;
+    
     margin: 0px;
     padding: 0px;
-}
-
-header div.logo{
-    width: 100%;
-    padding: 10px;
+    box-sizing: border-box;
 }
 
 div.logo img{
     width: 100%;
 }
 
-section.banner img{
-    width: 100%;
-}
-
-.lastVisit{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+img{
+    width:90%;
 }
 
 body{
@@ -27,76 +20,18 @@ body{
     background-color: #ebebeb;
 }
 
-h3{
-    font-size: 24px;
-}
-
 p{
     font-size: 12px;
 }
 
-header{
-    background-color:#EAC926;
+h3{
+    font-size: 24px;
 }
 
-div.top-header{
-    padding: 5%;
-}
-
-header nav{
-    font-size: 12px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    border: 1px solid #000;
-    color: #666;
-    width: 2%;
-    background-color:#EAC926;
-    border-color: #EAC926;
-}
-
-header div.top-header p{
+/* Header*/
+header div.logo{
     width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.product{
     padding: 10px;
-    border-top: solid 40px #efefef;
-    background-color: #FFF;
-    width: 45%;
-}
-
-div.compra{
-    text-align: center;
-}
-
-.header-ofertas{
-    text-align: justify;
-    padding: 1%;
-}
-
-.header-registros{
-    text-align: justify;
-    padding: 1%;
 }
 
 div.burger-menu{
@@ -109,12 +44,148 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     border: none;
     border-radius: 5px;
-    font-size: 1.5em;
-    height: 27px;
-    width: 29px;
+    font-size: 2em;
     padding: 10px;
     text-align: center;
 }
+
+header{
+    background-color:#EAC926;
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    border: 1px solid #000;
+    border-color: #EAC926;
+    background-color:#EAC926;
+    color: #666;
+    padding: 2px;
+    outline: none;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-ofertas{
+    text-decoration: none;
+    color: #666;
+    text-align: justify;
+    padding: 0.5%;
+    list-style-type: none;
+}
+
+.header-registros{
+    text-decoration: none;
+    color: #666;
+    text-align: justify;
+    padding: 0.5%;
+    list-style-type: none;
+}
+
+/* Banner*/
+section.banner img{
+    width: 100%;
+}
+
+/* Main*/
+.lastVisit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section article{
+    background-color: #FFF;
+    padding: 10px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i{
+    color: #39b54a;
+
+    display: block ;
+    font-size: 16 px ;
+    padding: 5 px ;
+    width: 30 px ;
+    height: 30 px ;
+    border: 1 px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50 % ;
+    position: absolute ;
+    right: 20 px ;
+    top: -15 px ;
+}
+
+.main-article{
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.price{
+    font-size: 18px;
+    padding: 0%;
+}
+
+.discount{
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+}
+
+.product{
+    /*display: flex;*/
+    padding: 10px;
+    border-top: solid 40px #efefef;
+    background-color: #FFF;
+    width: 90%;
+}
+
+div.compra{
+    text-align: center;
+}
+
+/*Footer*/
 
 footer{
     text-align: center;
@@ -123,6 +194,8 @@ footer{
 
 .fa-credit-card{
     color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .pago{
@@ -131,6 +204,8 @@ footer{
 
 .fa-gift{
     color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .envio{
@@ -140,6 +215,8 @@ footer{
 .fa-user-shield{
     color: #1259c3;
     width: 50%;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .seguridad{
@@ -153,14 +230,41 @@ footer{
 
 
 /* media queries*/
-@media screen and (min-width: 361px){
+
+/* Tablet */
+@media (min-width: 361px){
     .product{
         width: 45vw;
+        box-shadow: 0px 0px 10px rgb(10,10,100);
+    }
+
+    .description{
+        display: initial;
+    }
+
+    header nav{
+        display: initial;
+    }
+
+    div.burger-menu{
+        display:none;
     }
 }
 
-@media screen and (min-width: 769px){
+/* Desktop */
+@media (min-width: 769px){
     .product{
-        width: 20vw;
+        width: 17%;
     }
+
+    footer-flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pago, .envio, .seguridad,{
+        display:flex;
+        flex-direction: row;
+    }
+
 }
