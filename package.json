@@ -1,7 +1,7 @@
 {
-  "name": "mercadoliebre",
+  "name": "cls",
   "version": "1.0.0",
-  "description": "",
+  "description": "Micro desafíos del curso",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geRivera/mercadoLiebreDef.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geRivera/mercadoLiebreDef/issues"
+  },
+  "homepage": "https://github.com/geRivera/mercadoLiebreDef#readme"
 }
