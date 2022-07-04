@@ -3,6 +3,25 @@
     padding: 0px;
 }
 
+header div.logo{
+    width: 100%;
+    padding: 10px;
+}
+
+div.logo img{
+    width: 100%;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+.lastVisit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -22,11 +41,6 @@ header{
 
 div.top-header{
     padding: 5%;
-}
-
-header div.logo{
-    width: 100%;
-    padding: 10px;
 }
 
 header nav{
@@ -51,16 +65,38 @@ header .form .input{
 }
 
 header .form .submit{
-    background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
+    width: 2%;
+    background-color:#EAC926;
+    border-color: #EAC926;
 }
 
 header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+}
+
+.product{
+    padding: 10px;
+    border-top: solid 40px #efefef;
+    background-color: #FFF;
+    width: 45%;
+}
+
+div.compra{
+    text-align: center;
+}
+
+.header-ofertas{
+    text-align: justify;
+    padding: 1%;
+}
+
+.header-registros{
+    text-align: justify;
+    padding: 1%;
 }
 
 div.burger-menu{
@@ -74,49 +110,53 @@ div.burger-menu i{
     border: none;
     border-radius: 5px;
     font-size: 1.5em;
-    height: 45px;
-    width: 45px;
+    height: 27px;
+    width: 29px;
     padding: 10px;
+    text-align: center;
 }
 
+footer{
+    text-align: center;
 
-
-
-
-
-
-
-
-
-div.logo img{
-    width: 100%;
 }
 
-section.banner img{
-    width: 100%;
+.fa-credit-card{
+    color: #1259c3;
 }
 
-.lastVisit{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+.pago{
+    padding: 1%;
 }
 
-.product{
-    padding: 10px;
-    border-top: solid 40px #efefef;
-    background-color: #FFF;
-    width: 45%;
+.fa-gift{
+    color: #1259c3;
 }
+
+.envio{
+    padding: 1%;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    width: 50%;
+}
+
+.seguridad{
+    padding: 1%;
+}
+
+.derechos{
+    padding: 1%;
+    text-align: left;
+}
+
 
 /* media queries*/
 @media screen and (min-width: 361px){
     .product{
         width: 45vw;
     }
-
-
-
 }
 
 @media screen and (min-width: 769px){
