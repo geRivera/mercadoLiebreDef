@@ -4,6 +4,8 @@ const app = express();
 const path = require('path'); //unifica las rutas entre los sistemas operativos
 const publicPath = path.resolve(__dirname,'./public'); // resolve resuelve la ruta indicada
 
+const port = process.env.PORT || 3000;
+
 app.use(express.static(publicPath)); //permite el uso de archivos de una manera estática, le indica a express que es un recurso
 
 //app.listen(3000,()=> {
@@ -11,7 +13,7 @@ app.use(express.static(publicPath)); //permite el uso de archivos de una manera 
 //});
 
 app.listen(process.env.PORT || 3000, ()=> {
-    console.log('Servidor vivo en puerto 3000'); //para levantar el servidor
+    console.log('Servidor vivo en puerto' + port); //para levantar el servidor
 });
 
 app.get('/',(request,response)=>{
