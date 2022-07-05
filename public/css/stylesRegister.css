@@ -199,9 +199,9 @@ footer{
         flex-direction: row;
     }
 
-    .pago, .envio, .seguridad,{
+    .pago, .envio, .seguridad{
         display:flex;
-        flex-direction: row;
+        flex-direction:row;
     }
 
 }
