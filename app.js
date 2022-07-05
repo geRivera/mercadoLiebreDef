@@ -13,7 +13,7 @@ app.use(express.static(publicPath)); //permite el uso de archivos de una manera 
 //});
 
 app.listen(process.env.PORT || 3000, ()=> {
-    console.log('Servidor vivo en puerto' + port); //para levantar el servidor
+    console.log('Servidor vivo en puerto ' + port); //para levantar el servidor
 });
 
 app.get('/',(request,response)=>{
