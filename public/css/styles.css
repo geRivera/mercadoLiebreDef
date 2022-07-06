@@ -1,7 +1,6 @@
 *{
     color: #666;
     font-size: 12px;
-    
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -15,8 +14,11 @@ img{
     width:90%;
 }
 
+/*Body*/
+
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     background-color: #ebebeb;
 }
 
@@ -29,10 +31,84 @@ h3{
 }
 
 /* Header*/
-header div.logo{
-    width: 100%;
-    padding: 10px;
+header{
+    background-color:#EAC926;
+    color: black;
+    padding: 20px 0 0 0;
 }
+
+nav{
+    font-size: 12px;
+    display: none;
+    margin: 15px 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+    display: none;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+header .logo{
+    width: 50%;
+    padding: 0 0 0 30px;
+}
+
+header .busqueda{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formBusqueda{
+    width: 50%;
+    padding: 0 10px 0 0;  
+}
+
+.inputBusqueda{
+    width: 85%;
+    height: 35px;
+    border: 1px #666 solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.botonBusqueda{
+    padding: 2px;
+    border: none;
+    background-color: white;
+    margin: -33px;
+}
+
+.fa-solid{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; 
+}
+
+.fa-hand-holding-usd{
+    color: #03264C;
+}
+
+.compra{
+    text-align: center;
+    margin: auto;
+    padding: 20px 0 10px 0;
+    font-weight: 550;
+    color: #03264C;
+}
+
+
 
 div.burger-menu{
     text-align: center;
@@ -47,46 +123,6 @@ div.burger-menu i{
     font-size: 2em;
     padding: 10px;
     text-align: center;
-}
-
-header{
-    background-color:#EAC926;
-}
-
-header nav{
-    font-size: 12px;
-    display: none;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    border: 1px solid #000;
-    border-color: #EAC926;
-    background-color:#EAC926;
-    color: #666;
-    padding: 2px;
-    outline: none;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
 }
 
 .header-ofertas{
@@ -181,9 +217,7 @@ main section article i{
     width: 90%;
 }
 
-div.compra{
-    text-align: center;
-}
+
 
 /*Footer*/
 
@@ -233,16 +267,30 @@ footer{
 
 /* Tablet */
 @media (min-width: 361px){
+    
+    .top-header{   
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        display: initial;
+        margin: 15px 20px 0;
+    }
+
+    nav ul {
+        display: block;
+    }
+    
     .product{
         width: 45vw;
         box-shadow: 0px 0px 10px rgb(10,10,100);
     }
 
     .description{
-        display: initial;
-    }
-
-    header nav{
         display: initial;
     }
 
@@ -253,6 +301,17 @@ footer{
 
 /* Desktop */
 @media (min-width: 769px){
+   
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .product{
         width: 17%;
     }
@@ -266,5 +325,4 @@ footer{
         display: flex;
         flex-direction: row;
     }
-
 }
