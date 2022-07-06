@@ -110,15 +110,16 @@ header .busqueda{
     color: #03264C;
 }
 
-div.burger-menu i{
+.burger-menu i{
+    text-align: center;
     background-color: #1259c3;
     color:#ebebeb;
-    margin: auto;
-    border: none;
+    display: block;
     border-radius: 5px;
-    font-size: 2em;
-    padding: 10px;
+    padding: 8px 0;
+    max-width: 35px;
     text-align: center;
+    margin: auto;
 }
 
 .header-ofertas{
@@ -215,6 +216,7 @@ main section article i{
     border-top: solid 40px #efefef;
     background-color: #FFF;
     width: 90%;
+    box-shadow: none;
 }
 
 
@@ -294,7 +296,7 @@ footer{
         display: initial;
     }
 
-    div.burger-menu{
+    .burger-menu{
         display:none;
     }
 
