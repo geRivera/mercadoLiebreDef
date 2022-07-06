@@ -160,9 +160,10 @@ section{
     text-align: center;
 }
 
-main section article{
+article {
+    margin: 10px;
     background-color: #FFF;
-    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 
 main section article img{
@@ -300,6 +301,11 @@ footer{
     .titulo{
         text-align: left;
     }
+
+    article {
+        width: 43%;
+        box-shadow: none;
+    }
 }
 
 /* Desktop */
@@ -316,7 +322,9 @@ footer{
     }
 
     .product{
-        width: 17%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     footer-flex{
@@ -332,6 +340,10 @@ footer{
     ul li {
         margin: 10px;
         font-size: 14px;
+    }
+
+    article {
+        width: 22%;
     }
 
 }
