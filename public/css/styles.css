@@ -151,6 +151,21 @@ header .busqueda{
     text-align: center;
 }
 
+.iconoCamion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
 main{
     width: 90%;
     margin: auto;
@@ -173,7 +188,6 @@ main section article img{
 
 main section article i{
     color: #39b54a;
-
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -188,9 +202,10 @@ main section article i{
 }
 
 .main-article{
-    justify-content: center;
-    border-top: 1px solid #ebebeb;
+    text-align: left;
     padding: 15px;
+    border-top: 1px solid #ebebeb;
+    position: relative;
 }
 
 .price{
@@ -225,7 +240,9 @@ main section article i{
 
 footer{
     text-align: center;
-
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 0;
 }
 
 .fa-credit-card{
@@ -260,10 +277,32 @@ footer{
 }
 
 .derechos{
-    padding: 1%;
+    font-size: 8px;
+    color: #666;
+    margin: 30px 10px 5px;
     text-align: left;
 }
 
+
+.iconoFooter{
+    size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.tituloFooter{
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.textos-footer {
+    color: #666;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+}
 
 /* media queries*/
 
@@ -329,14 +368,14 @@ footer{
         justify-content: space-between;
     }
 
-    footer-flex{
+    .footer-flex{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
     }
 
     .pago, .envio, .seguridad{
-        display: flex;
-        flex-direction: row;
+        text-align: center;
+        padding: 10px 40px;
     }
 
     ul li {
